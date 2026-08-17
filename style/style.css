@@ -13,7 +13,7 @@
             /* margin: 25rem; */
             margin: auto;
             border-radius: 12px;
-            width: 450px;
+            width: 500px;
         }
         .card input{
             margin-block: 10px;
@@ -25,7 +25,7 @@
         }
         .f-input input{
             width: 450px;
-            border:1px solid hsl(187, 24%, 22%);
+            border:1px solid hsla(120, 100%, 20%, 0.37);
             border-radius: 7px;
             padding: 0.9rem;
             /* border: none; */
@@ -34,7 +34,7 @@
         #mail input{
             padding-block: 2rem;
             padding-inline: 2rem;
-            width: 400px;
+            width: 420px;
         }
         h1{
             font-family: karla;
