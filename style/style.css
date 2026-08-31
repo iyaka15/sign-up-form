@@ -9,10 +9,11 @@
         }
         .card{
             background-color:  hsl(0, 0%, 100%);
-            padding: 2rem;
+            padding-block: 2rem;
+            padding-inline: 5rem;
             margin: auto;
             border-radius: 12px;
-            max-width: 500px;
+            max-width: 400px;
         }
         .card input{
             margin-block: 7px;
@@ -26,22 +27,42 @@
             width: 100%;
             border:1px solid hsl(169, 82%, 27%);
             border-radius: 7px;
-            padding-inline: 0rem;
+            padding-inline: 0.9rem;
             padding-block: 0.7rem;
             outline-color: hsl(186, 15%, 59%);
         }
+        .f-input input:hover{
+            cursor: pointer;
+            border: 1px solid hsl(186, 15%, 59%);
+        }
+        .f-input input:active{
+            background-color: hsl(148, 38%, 91%);
+        }
+        .f-input input:focus{
+            background-color: hsl(148, 38%, 91%);
+        }
         #mail input{
             width: 100%;
-            padding-inline: 0rem;
+            padding-inline: 0.9rem;
             padding-block: 2rem;
             overflow: hidden;
-            /* height: 4rem; */
+            height: 100%;
 
+        }
+        #mail input:hover{
+            cursor: pointer;
+            border: 2px solid hsl(186, 15%, 59%);
+        }
+        #mail input:active{
+            background-color: hsl(148, 38%, 91%);
+        }
+        #mail input:focus{
+            background-color: hsl(148, 38%, 91%);
         }
         h1{
             font-family: karla;
             font-weight: 600;
-            padding-bottom: 1.5rem;
+            padding-bottom: 1rem;
             text-transform: capitalize;
         }
         .name{
@@ -52,9 +73,12 @@
         #name1,#name2{
             flex-basis: 48%;
         }
+        #name2 {
+            margin-left: 1.7rem;
+        }
         .name input{
            width: 100%;
-           padding-inline: 0.1rem;
+            padding-inline: 0.9rem
         }
         #box{
             font-family: karla;
@@ -67,12 +91,42 @@
         button{
             font-family: karla;
             padding-block: 1rem; 
-            padding-inline: 0.5rem;
+            padding-inline: 13.4rem;
             margin-top: 2rem;
-            width: 100%;
-            /* display: inline-block; */
+            width: 95%;
             color: white;
             background-color:  hsl(169, 82%, 27%);
             border-radius: 7px;
             border: none;
         }
+        @media (max-width: 814px) {
+            .f-input{
+                display: block;
+                width: 100%;
+            }
+            
+        }
+        @media (max-width: 768px) {
+            .name{
+                flex-direction: column;
+                gap: 0.1rem;
+            }
+            #name2{
+                margin-left: 0.1rem;
+            }
+         }
+         @media (max-width: 550px) {
+                button{
+                    width: 100%;
+                    padding-inline: 2rem;
+                    padding-block: 1.3rem;
+                    height: 100%;
+                }
+                 #mail input{
+                width: 100%;
+                padding-inline: 0.9rem;
+                padding-block: 5rem;
+                overflow: hidden;
+                height: 100%;
+                }
+            }
