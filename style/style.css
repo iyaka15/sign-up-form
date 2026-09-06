@@ -10,7 +10,7 @@
         .card{
             background-color:  hsl(0, 0%, 100%);
             padding-block: 2rem;
-            padding-inline: 5rem;
+            padding-inline: 3rem;
             margin: auto;
             border-radius: 12px;
             max-width: 400px;
@@ -115,7 +115,16 @@
                 margin-left: 0.1rem;
             }
          }
+
          @media (max-width: 550px) {
+             /* #container{
+                padding-inline: 2rem;
+                width: 100%;
+             } */
+             .card{
+                padding-right: 3.9rem;
+                padding-left: 1.9rem;
+             }
                 button{
                     width: 100%;
                     padding-inline: 2rem;
@@ -129,4 +138,13 @@
                 overflow: hidden;
                 height: 100%;
                 }
+            }
+            @media (max-width:525px) {
+                #container{
+                padding-inline: auto;
+             }
+                .card{
+                padding-right: 0.3rem;
+                padding-left: 5rem;
+             }
             }
